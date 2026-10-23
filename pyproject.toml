@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waiting-on-you"
+version = "0.1.0"
+description = "How long did your AI agents wait on you? Reads Claude Code and Codex logs, locally."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+waiting-on-you = "waiting_on_you:main"
+
+[tool.setuptools]
+py-modules = ["waiting_on_you"]
